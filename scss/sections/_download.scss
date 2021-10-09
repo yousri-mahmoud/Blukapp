@@ -1,0 +1,33 @@
+.download__app {
+  display: block;
+  margin: 10rem 0;
+  padding: 10rem 0;
+  color: white;
+  background: $gradient;
+  .download__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+
+  .download__buttons {
+    button {
+      display: flex;
+      align-items: center;
+      color: white;
+      background-color: transparent;
+      border: 1px solid white;
+      padding: 1rem 2rem;
+      h4,
+      h5 {
+        font-weight: $f-weight-normal;
+      }
+      img {
+        width: 30px;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

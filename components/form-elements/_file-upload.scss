@@ -1,0 +1,43 @@
+.custom-dropzone {
+	flex: 1;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	padding: rem(20px);
+	border-width: rem(2px);
+	border-radius: rem(2px);
+	border-color: #eeeeee;
+	border-style: dashed;
+	background-color: #fafafa;
+	color: #bdbdbd;
+	outline: none;
+	transition: border 0.24s ease-in-out;
+	div.file-preview {
+		text-align: center;
+		position: relative;
+		margin: 0 rem(10px);
+		img {
+			// width: rem(100px);
+			height: rem(100px);
+			border-radius: rem(4px);
+		}
+		button {
+			position: absolute;
+			top: rem(3px);
+			right: rem(3px);
+			opacity: 0;
+			transition: 0.15s;
+			transform: scale(0.7);
+		}
+		&:hover {
+			button {
+				opacity: 1;
+			}
+		}
+		.file-name {
+			font-size: rem(18px);
+			display: none;
+		}
+	}
+}

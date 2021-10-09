@@ -1,0 +1,87 @@
+.status-block {
+	padding: 0 rem(7px);
+	padding-right: rem(12px);
+	height: rem(36px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+	border-radius: rem(40px);
+	font-weight: $f-weight-normal;
+	font-size: rem(14px);
+	background-color: #ddd;
+	color: $c-text;
+	white-space: pre;
+	svg {
+		width: rem(24px);
+		height: rem(24px);
+		margin-right: rem(10px);
+		fill: $c-text;
+	}
+	&.status-1,
+	&.status-100,
+	&.status-pending {
+		background-color: transparentize(#e59332, 0.85);
+		color: #e59332;
+		svg {
+			fill: #e59332;
+		}
+	}
+
+	&.status-2,
+	&.status-32,
+	&.status-200,
+	&.status-300 {
+		background-color: transparentize(#0dcaf0, 0.85);
+		color: #0dcaf0;
+		svg {
+			fill: #0dcaf0;
+		}
+	}
+
+	&.status-64,
+	&.status-128,
+	&.status-16,
+	&.status-400 {
+		background-color: transparentize(#9b59b6, 0.85);
+		color: #9b59b6;
+		svg {
+			fill: #9b59b6;
+		}
+	}
+
+	&.status-4,
+	&.status-8,
+	&.status-2048,
+	&.status-700,
+	&.status-failed {
+		background-color: transparentize($red, 0.85);
+		color: $red;
+		svg {
+			fill: $red;
+		}
+	}
+
+	&.status-partially_refunded,
+	&.status-fully_refunded {
+		background-color: transparentize(#222, 0.85);
+		color: #222;
+		svg {
+			fill: #222;
+		}
+	}
+
+	&.status-1024,
+	&.status-256,
+	&.status-512,
+	&.status-500,
+	&.status-600,
+	&.status-fully_received,
+	&.status-partially_received {
+		background-color: transparentize(#43aa2b, 0.85);
+		color: #43aa2b;
+		svg {
+			fill: #43aa2b;
+		}
+	}
+}

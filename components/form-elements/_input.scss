@@ -1,0 +1,53 @@
+.form-group {
+	.input-wrapper {
+		position: relative;
+		.icon {
+			position: absolute;
+			right: rem(10px);
+			top: 50%;
+			transform: translateY(-50%);
+			width: rem(24px);
+			height: rem(24px);
+			z-index: 4;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				max-width: rem(18px);
+				max-height: rem(18px);
+			}
+		}
+		/* Chrome, Safari, Edge, Opera */
+		.remove-numbers-style,
+		input.unit-input::-webkit-outer-spin-button,
+		input.unit-input::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+			margin: 0;
+		}
+		/* Firefox */
+		.remove-numbers-style,
+		input.unit-input[type="number"] {
+			-moz-appearance: textfield;
+		}
+		.input-units {
+			position: absolute;
+			right: rem(12px);
+			top: 50%;
+			transform: translateY(-50%);
+			z-index: 4;
+			span {
+				padding: rem(3px) rem(10px);
+				border-radius: rem(3px);
+				cursor: pointer;
+				&.active {
+					background-color: #6d7175;
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.react-datepicker-wrapper {
+	display: block !important;
+}

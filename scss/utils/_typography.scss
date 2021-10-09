@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+$f-weight-thin: 300;
+$f-weight-normal: 500;
+$f-weight-bold: 700;
+
+$f-size-xxs: 1.2rem;
+$f-size-xs: 1.3rem;
+$f-size-sm: 1.4rem;
+$f-size-md: 1.6rem;
+$f-size-lg: 2rem;
+$f-size-xl: 3.5rem;
+$f-size-xxl: 5rem;
+
+:root {
+  font-family: "Poppins", sans-serif, "Franklin Gothic Medium", "Arial Narrow",
+    Arial;
+  font-size: 10px;
+  font-weight: $f-weight-normal;
+}
+
+@media screen and (max-width: 500px) {
+  :root {
+    font-size: 5px;
+  }
+}
+
+h1,
+h2,
+h3 {
+  font-weight: $f-weight-bold;
+}
+h1 {
+  font-size: $f-size-xxl;
+  line-height: $f-size-xxl + 0.8rem;
+}
+h2 {
+  font-size: $f-size-xl;
+  line-height: $f-size-xl + 0.8rem;
+}
+h3 {
+  font-size: $f-size-lg;
+  line-height: $f-size-lg + 0.8rem;
+}
+h4 {
+  font-size: $f-size-sm;
+  line-height: $f-size-md + 0.8rem;
+  color: $c-text-subdued;
+  font-weight: $f-weight-normal;
+}
+p {
+  font-size: $f-size-md;
+  line-height: $f-size-md + 0.8rem;
+}
+
+// Weights
+.fw-thin {
+  font-weight: $f-weight-thin;
+}
+.fw-normal {
+  font-weight: $f-weight-normal;
+}
+.fw-bold {
+  font-weight: $f-weight-bold;
+}
+
+// Sizes
+.fs-xxs {
+  font-size: $f-size-xxs;
+  line-height: $f-size-xxs + 0.8rem;
+}
+.fs-xs {
+  font-size: $f-size-xs;
+  line-height: $f-size-xs + 0.8rem;
+}
+.fs-sm {
+  font-size: $f-size-sm;
+  line-height: $f-size-sm + 0.8rem;
+}
+.fs-md {
+  font-size: $f-size-md;
+  line-height: $f-size-md + 0.8rem;
+}
+.fs-lg {
+  font-size: $f-size-lg;
+  line-height: $f-size-lg + 0.8rem;
+}
+.fs-xl {
+  font-size: $f-size-xl;
+  line-height: $f-size-xl + 0.8rem;
+}
+.fs-xxl {
+  font-size: $f-size-xxl;
+  line-height: $f-size-xxl + 0.8rem;
+}

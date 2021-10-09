@@ -1,0 +1,25 @@
+.interior__primary {
+  display: block;
+  background-color: $light-bg;
+  padding: 10rem 0;
+  .flex {
+    .img-wrapper {
+      max-width: 500px;
+      img {
+        width: 100%;
+      }
+    }
+    .content-wrapper {
+      padding: 3rem 0;
+      max-width: 500px;
+      h2 {
+        font-weight: $f-weight-normal;
+        margin-bottom: 3rem;
+      }
+      p {
+        color: $c-text;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+}

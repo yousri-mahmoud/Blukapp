@@ -1,0 +1,44 @@
+.hero {
+  // & === .hero
+  display: block;
+  padding-top: $header-height;
+  background-image: url("../img/banner/home-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  .container {
+    // & === .hero .container
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  &__content-wrapper {
+    // & === .hero .hero__content-wrtapper
+    max-width: 400px;
+    color: white;
+    h1 {
+      margin-bottom: 1.6rem;
+    }
+    .btn {
+      margin-top: 3rem;
+    }
+  }
+  &__img-wrapper {
+    display: flex;
+    img {
+      max-height: 85vh;
+      max-width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .hero {
+    .container {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+}

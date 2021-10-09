@@ -1,0 +1,8 @@
+.badge {
+    font-size: $f-size-sm;
+    font-weight: $f-weight-thin;
+    color: $c-text;
+    &-light {
+        background-color: $c-white-overlay4;
+    }
+}

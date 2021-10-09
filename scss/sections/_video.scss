@@ -1,0 +1,16 @@
+.video-wrapper {
+  display: block;
+  margin-bottom: 10rem;
+  .container {
+    position: relative;
+    .video {
+      width: 100%;
+    }
+    .play-video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.testimonial {
+  display: block;
+  padding: 10rem 0;
+  background-color: $light-bg;
+  &__items__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+    .testimonial__item {
+      display: flex;
+      width: 50%;
+      min-width: 300px;
+      flex: 1;
+      background-color: white;
+      padding: 3rem;
+      .item__content {
+        h3 {
+          margin-top: 2rem;
+        }
+      }
+      .item__img {
+        margin-right: 3rem;
+      }
+    }
+  }
+}

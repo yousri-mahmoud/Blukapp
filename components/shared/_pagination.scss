@@ -1,0 +1,18 @@
+.pagination {
+    margin-bottom: rem(12px);
+}
+.page-link {
+    color: $c-text-subdued;
+    white-space: nowrap;
+    &:hover {
+        color: $c-secondary;
+        background-color: $c-white-overlay2;
+    }
+    &:focus {
+        box-shadow: none;
+    }
+}
+.page-item.active .page-link {
+    background-color: $c-secondary;
+    border-color: $c-secondary;
+}

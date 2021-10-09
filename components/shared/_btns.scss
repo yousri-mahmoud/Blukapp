@@ -1,0 +1,53 @@
+.btn{
+	cursor: pointer;
+	display: flex !important;
+	align-items: center !important;
+	justify-content: center !important;
+	white-space: nowrap !important;
+	&:focus, &:hover{
+		outline: 0;
+		box-shadow: none;
+	}
+	&-primary{
+		border: 0;
+		background-color: $c-primary-light;
+		padding: rem(8px) rem(16px);
+		font-weight: 500;
+		font-size: rem(14px);
+		&:hover, &:active, &:focus, &.disabled, &:disabled{
+			background-color: darken($c-primary-light, 6%) !important;
+			box-shadow: none !important;
+			border-color: none;
+		}
+	}
+	&-outline-secondary{
+		border: 1px solid $c-border-light;
+		color: $c-text-subdued;
+	}
+	&-light{
+		background-color: $c-white-overlay3;
+		border: 0;
+		color: $c-text;
+	}
+	&-link{
+		padding: 0;
+	}
+}
+// Override btn-outline-secondary styles
+.btn-outline-secondary:hover,
+.btn-outline-secondary:not(:disabled):not(.disabled).active, 
+.btn-outline-secondary:not(:disabled):not(.disabled):active, 
+.show >.btn-outline-secondary.dropdown-toggle{
+	background-color: $c-white-overlay2 !important;
+	border-color: $c-border-light !important;
+	color: $c-text !important;
+	box-shadow: none !important;
+}
+
+.btn-light:hover,
+.btn-light:not(:disabled):not(.disabled).active:focus, 
+.btn-light:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-light.dropdown-toggle:focus{
+	box-shadow: none;
+	background-color: $c-white-overlay4;
+}

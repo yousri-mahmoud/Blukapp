@@ -1,0 +1,35 @@
+.data-pairs {
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: rem(12px);
+        position: relative;
+        font-size: $f-size-sm;
+        &::before {
+            content: '';
+            width: rem(4px);
+            height: rem(4px);
+            border-radius: rem(1px);
+            background-color: $c-white-overlay5;
+            transform: rotate(45deg);
+            margin-right: rem(8px);
+            margin-top: rem(8px);
+            display: none;
+        }
+        .key {
+            color: $c-text-subdued;
+            width: 40%;
+            padding-right: rem(24px);
+        }
+        .value {
+            width: 60%;
+            display: flex;
+        }
+    }
+    .time-spot {
+        padding: rem(4px) rem(8px);
+        background-color: #e7e7e7;
+        border-radius: rem(4px);
+        display: inline;
+    }
+}

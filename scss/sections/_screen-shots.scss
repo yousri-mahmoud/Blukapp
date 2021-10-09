@@ -1,0 +1,14 @@
+.screenshots {
+  display: block;
+  margin: 10rem 0;
+  .screenshots__img__wrapper {
+    display: flex;
+    justify-content: center;
+
+    gap: 20px;
+    flex-wrap: wrap;
+    & img {
+      min-width: 200px;
+    }
+  }
+}

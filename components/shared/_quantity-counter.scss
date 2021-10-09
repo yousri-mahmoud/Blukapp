@@ -1,0 +1,21 @@
+.quantity-counter-wrapper {
+	flex-wrap: nowrap;
+	.form-group,
+	.input-group {
+		margin: 0 !important;
+	}
+	input {
+		width: rem(50px) !important;
+	}
+	button {
+		background: #f5f6fa;
+		border: 1px solid #eee;
+	}
+	.counter-value {
+		width: rem(50px);
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}

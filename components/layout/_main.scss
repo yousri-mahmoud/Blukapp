@@ -1,0 +1,12 @@
+main {
+	padding: rem(20px);
+	padding-bottom: rem(50px);
+	// overflow-y: auto;
+	position: relative;
+}
+
+@media screen and (max-width: $mobile-screen) {
+	main {
+		padding: rem(16px);
+	}
+}

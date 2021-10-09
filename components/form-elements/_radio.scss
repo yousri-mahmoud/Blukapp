@@ -1,0 +1,66 @@
+[type="radio"] {
+	&:checked,
+	&:not(:checked) {
+		position: absolute;
+		left: rem(-9999px);
+	}
+
+	&:checked + label,
+	&:not(:checked) + label {
+		position: relative;
+		padding-left: rem(28px);
+		margin-right: rem(10px);
+		cursor: pointer;
+		line-height: rem(20px);
+		display: inline-block;
+		color: #666;
+	}
+
+	&:checked + label:before,
+	&:not(:checked) + label:before {
+		content: "";
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: rem(18px);
+		height: rem(18px);
+		border: rem(1px) solid #ddd;
+		border-radius: 100%;
+		background: #fff;
+	}
+
+	&:checked + label:after {
+		content: "";
+		width: rem(12px);
+		height: rem(12px);
+		background: $c-primary-light;
+		position: absolute;
+		top: rem(3px);
+		left: rem(3px);
+		border-radius: 100%;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+	}
+
+	&:not(:checked) + label:after {
+		content: "";
+		width: rem(12px);
+		height: rem(12px);
+		background: $c-primary-light;
+		position: absolute;
+		top: rem(3px);
+		left: rem(3px);
+		border-radius: 100%;
+		-webkit-transition: all 0.2s ease;
+		transition: all 0.2s ease;
+		opacity: 0;
+		-webkit-transform: scale(0);
+		transform: scale(0);
+	}
+
+	&:checked + label:after {
+		opacity: 1;
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}

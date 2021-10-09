@@ -1,0 +1,54 @@
+.receipt {
+	background-color: $c-white-overlay2;
+	border-radius: rem(8px);
+	padding: rem(16px) rem(24px) rem(24px);
+	margin: rem(16px);
+	&.loading {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	li {
+		display: flex;
+		justify-content: space-between;
+		padding: rem(8px) 0;
+	}
+	span {
+		color: $c-text-subdued;
+		margin-left: rem(4px);
+	}
+	&__payable_amount,
+	&__total {
+		display: flex;
+		justify-content: space-between;
+		padding-top: rem(12px);
+		margin-top: rem(10px);
+		border-top: 1px solid $c-white-overlay3;
+		* {
+			font-size: $f-size-lg;
+			font-weight: $f-weight-normal;
+			color: $c-primary-light !important;
+		}
+	}
+	&__payable_amount {
+		* {
+			color: $c-text !important;
+		}
+	}
+}
+
+@media screen and (max-width: $mobile-screen) {
+	.receipt {
+		li, &__total, &__payable_amount{
+			align-items: flex-start;
+			padding: rem(12px) 0;
+			> div:first-of-type {
+				display: flex;
+				flex-direction: column;
+				span {
+					margin: 0;
+				}
+			}
+		}
+	}
+}

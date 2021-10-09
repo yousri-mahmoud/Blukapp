@@ -1,0 +1,25 @@
+.bill{
+    background-color: #F5F6FA;
+    border-radius: 5px;
+    padding: rem(20px);
+    margin-top: rem(20px);
+    ul{
+        list-style-type: none;
+        margin: 0;
+    }
+    li{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: rem(6px) 0;
+        &:last-of-type p{
+            color: $c-primary-light;
+        }
+    }
+    span{
+        color: $c-text-subdued;
+    }
+    p{
+        margin-bottom: 0;
+    }
+}

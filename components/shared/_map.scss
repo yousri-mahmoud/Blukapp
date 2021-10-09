@@ -1,0 +1,62 @@
+.map-element {
+	position: relative;
+	.search-input-wrapper {
+		background-color: #fff;
+		border: 1px solid transparent;
+		min-width: rem(240px);
+		width: 80%;
+		position: absolute;
+		top: rem(10px);
+		height: rem(56px);
+		left: 50%;
+		transform: translateX(-50%);
+		border-radius: rem(12px);
+		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+		padding-left: rem(20px);
+		padding-right: rem(5px);
+		.location-icon,
+		.search-icon {
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			left: rem(5px);
+			width: rem(20px);
+		}
+		input {
+			height: rem(50px);
+			padding: 0 12px;
+			display: block;
+			width: 100%;
+			font-size: rem(16px);
+			border: 0;
+			outline: none;
+			text-overflow: ellipsis;
+		}
+		.selected-address {
+			height: rem(55px);
+			font-size: rem(18px);
+			display: flex;
+			align-items: center;
+			padding-left: rem(15px);
+			span {
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+				display: block;
+				width: 90%;
+			}
+			.close-icon {
+				position: absolute;
+				right: rem(10px);
+				top: 50%;
+				transform: translateY(-50%);
+				width: rem(20px);
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.pac-container {
+	z-index: 1100 !important;
+}

@@ -1,0 +1,31 @@
+.btn {
+  font-family: "Poppins", sans-serif, "Franklin Gothic Medium", "Arial Narrow",
+    Arial;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: $f-weight-thin;
+  background-color: transparent;
+  &-white {
+    padding: 1.2rem 2.8rem;
+
+    background-color: #fff;
+    color: black;
+    &:hover {
+      box-shadow: 0 5px 8px 4px rgba(black, 0.1);
+    }
+  }
+  &-gradient {
+    padding: 1.2rem 3.5rem;
+
+    color: white;
+    background: $gradient;
+  }
+  &-gray {
+    padding: 1.2rem 3.5rem;
+    color: $c-text;
+    background: $light-bg;
+    font-weight: $f-weight-normal;
+    border: 1px solid $c-text;
+  }
+}

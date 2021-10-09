@@ -1,0 +1,64 @@
+.tabs {
+	position: relative;
+	> ul {
+		display: flex;
+		align-items: center;
+		padding: rem(10px) rem(12px);
+		border-bottom: 1px solid $c-white-overlay3;
+		margin: 0;
+		position: relative;
+		overflow-x: auto;
+		// &::after {
+		// 	content: "";
+		// 	position: absolute;
+		// 	top: 0;
+		// 	right: 0;
+		// 	height: 100%;
+		// 	width: rem(40px);
+		// 	background: linear-gradient(
+		// 		to left,
+		// 		rgba(white, 1) 0%,
+		// 		rgba(white, 0) 100%
+		// 	);
+		// }
+		&::-webkit-scrollbar {
+			height: rem(6px);
+			background-color: rgba(black, 0.1);
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: rgba(black, 0.3);
+		}
+		li {
+			padding: 0 rem(10px);
+			height: rem(40px);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			margin-right: rem(10px);
+			cursor: pointer;
+			white-space: nowrap;
+			color: $c-text-subdued;
+			transition: color 60ms ease-in-out;
+			&:hover {
+				color: $c-text;
+			}
+			&.active {
+				color: $c-primary-light;
+			}
+		}
+	}
+	.active-line {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: rem(40px);
+		height: rem(4px);
+		border-radius: rem(20px) rem(20px) 0 0;
+		background-color: $c-primary-light;
+		transition: 80ms ease-in-out;
+	}
+	.tabs-content {
+		padding: rem(20px) 0;
+	}
+}
